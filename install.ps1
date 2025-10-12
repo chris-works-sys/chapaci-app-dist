@@ -1,3 +1,5 @@
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 # Evita que o script continue se der algum erro
 $ErrorActionPreference = 'Stop'
 
@@ -36,3 +38,4 @@ npm run start:prod
 # Mantém o terminal aberto
 Write-Host 'Script finalizado. Pressione Enter para sair...'
 Read-Host
+
