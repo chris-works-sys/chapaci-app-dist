@@ -18,7 +18,7 @@ if (-not (Get-Command npm -ErrorAction SilentlyContinue)) {
 # Baixa o pacote zipado da aplicação
 Write-Host 'Baixando app.zip...'
 
-Invoke-WebRequest -Uri 'https://github.com/chris-works-sys/chapaci-app-dist/raw/refs/heads/main/chapaci1.0.1.zip' -OutFile 'app.zip'
+Invoke-WebRequest -Uri 'https://github.com/chris-works-sys/chapaci-app-dist/raw/refs/heads/main/chapaci1.0.2.zip' -OutFile 'app.zip'
 
 # Descompacta (sobrescreve se já existir)
 Write-Host 'Extraindo app.zip...'
@@ -38,4 +38,5 @@ npm run start:prod
 # Mantém o terminal aberto
 Write-Host 'Script finalizado. Pressione Enter para sair...'
 Read-Host
+
 
