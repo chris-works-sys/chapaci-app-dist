@@ -57,3 +57,6 @@ function edgeSpeak(text) {
           });
         });
       }
+
+
+@andresaya/edge-tts
