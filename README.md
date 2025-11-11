@@ -23,3 +23,10 @@ function gttsSpeak(text) {
           });
         });
       }
+
+
+gttsSpeak(text).then(() => {
+          console.log("Fala concluída via gTTS.");
+        }).catch((e) => {
+          console.error("Erro na fala via gTTS:", e);
+        });
